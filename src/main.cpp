@@ -1,7 +1,7 @@
 #include <android_native_app_glue.h>
 #include <android/log.h>
 
-#define APPNAME "TestApp"
+#define APPNAME "CMakeExampleApp"
 
 void android_main(struct android_app* state)
 {
