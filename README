@@ -7,7 +7,7 @@ Building
 2. Clone the android-cmake project
 3. Set the following env parameters:
 ANDROID_NDK_HOME=<path to where android ndk is installed>
-ANDROID_STANDALONE_TOOLCHAIN=<path to where the ndk standalone toolchain>
+ANDROID_STANDALONE_TOOLCHAIN=<path to the ndk standalone toolchain>
 ANDROID_CMAKE_HOME=<path to the android-cmake project>
 4. In project root do:
   mkdir build && cd build
