@@ -1,2 +1,15 @@
 Hello world Android NDK application to show how to use android-cmake and android.apk.cmake from here:
 https://github.com/Discordia/android-cmake
+
+Building
+-------------------
+1. Create a android ndk standalone toolchain.
+2. Clone the android-cmake project
+3. Set the following env parameters:
+ANDROID_NDK_HOME=<path to where android ndk is installed>
+ANDROID_STANDALONE_TOOLCHAIN=<path to where the ndk standalone toolchain>
+ANDROID_CMAKE_HOME=<path to the android-cmake project>
+4. In project root do:
+  mkdir build && cd build
+  cmake -DCMAKE_TOOLCHAIN_FILE=/usr/local/android/android-cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug .. 
+  make
