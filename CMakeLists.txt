@@ -19,5 +19,5 @@ set(SOURCES
 add_library(androidcmakeexample SHARED ${SOURCES})
   target_link_libraries(androidcmakeexample log android)
 set_target_properties(androidcmakeexample PROPERTIES COMPILE_DEFINITIONS "ANDROID")
-android_create_apk(androidcmakeexample "${CMAKE_BINARY_DIR}/apk" "${CMAKE_SOURCE_DIR}/libs" "${CMAKE_SOURCE_DIR}/android" "${CMAKE_SOURCE_DIR}/assets")
+android_create_apk(androidcmakeexample "org.discordia.cmake.example" "${CMAKE_BINARY_DIR}/apk" "${CMAKE_SOURCE_DIR}/libs" "${CMAKE_SOURCE_DIR}/android" "${CMAKE_SOURCE_DIR}/assets")
 
